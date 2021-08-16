@@ -12,8 +12,8 @@ Gem::Specification.new do |s|
   s.description = 'Add (optional) extension description here'
   s.required_ruby_version = '>= 2.5'
 
-  s.author    = 'You'
-  s.email     = 'you@example.com'
+  s.author    = 'OlympusOne'
+  s.email     = 'dimidev@olympusone.com'
   s.homepage  = 'https://github.com/olympusone/spree_bank_transfer'
   s.license = 'BSD-3-Clause'
 
