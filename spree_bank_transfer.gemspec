@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.version     = SpreeBankTransfer.version
   s.summary     = 'Add extension summary here'
   s.description = 'Add (optional) extension description here'
-  s.required_ruby_version = '>= 2.5'
+  s.required_ruby_version = '>= 2.7.3'
 
   s.author    = 'OlympusOne'
   s.email     = 'dimidev@olympusone.com'
