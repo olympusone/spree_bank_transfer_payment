@@ -1,5 +1,7 @@
 # SpreeBankTransfer
 
+[![Maintainability](https://api.codeclimate.com/v1/badges/bf08f4a7809a199640eb/maintainability)](https://codeclimate.com/github/olympusone/spree_bank_transfer/maintainability)
+
 ## Installation
 
 1. Add this extension to your Gemfile with this line:
