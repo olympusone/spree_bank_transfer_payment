@@ -10,6 +10,7 @@ module Spree
                     redirect_to spree.admin_order_payments_path(@order)
                 else
                     flash[:error] = e.message.to_s
+                    
                     redirect_back(fallback_location: spree.admin_order_payments_path(@order))
                 end
             end
