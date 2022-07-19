@@ -6,7 +6,7 @@ require 'spree_bank_transfer/version'
 
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
-  s.name        = 'spree_banktransfer'
+  s.name        = 'spree_bank_transfer'
   s.version     = SpreeBankTransfer.version
   s.summary     = 'Spree Bank Transfer'
   s.description = 'An extension which allows adding a new payment method “Bank Transfer” to existing spree e-commerce store.'
