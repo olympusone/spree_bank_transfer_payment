@@ -2,6 +2,8 @@
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/bf08f4a7809a199640eb/maintainability)](https://codeclimate.com/github/olympusone/spree_bank_transfer/maintainability)
 
+Spree Bank Transfer is an extension which allows adding a new payment method “Bank Transfer” to existing spree e-commerce store. With the help of this payment method customer can place an order online and pay by transferring money directly into merchant’s Bank account. This extension allow merchants to provide their bank account(s) details which in turn is used by customers to order and pay using this method. This extension also facilitate admin to Activate/Deactivate attached Bank accounts. Admin can also filter orders on the basis of the available payment transaction reference numbers with this extension.
+
 ## Installation
 
 1. Add this extension to your Gemfile with this line:
@@ -16,13 +18,7 @@
     bundle install
     ```
 
-3. Copy & run migrations
-
-    ```ruby
-    bundle exec rails g spree_bank_transfer:install
-    ```
-
-4. Restart your server
+3. Restart your server
 
   If your server was running, restart it so that it can find the assets properly.
 
