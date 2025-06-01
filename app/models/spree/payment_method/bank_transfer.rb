@@ -8,6 +8,10 @@ module Spree
       Spree.t(:bank_transfer_method)
     end
 
+    def custom_form_fields_partial_name
+      :bank_transfer_instructions
+    end
+
     def source_required?
       false
     end
