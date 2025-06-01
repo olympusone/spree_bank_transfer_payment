@@ -1,20 +1,18 @@
-module SpreeBankTransfer
+module SpreeBankTransferPayment
   class Engine < Rails::Engine
     require 'spree/core'
     isolate_namespace Spree
-    engine_name 'spree_bank_transfer'
+    engine_name 'spree_bank_transfer_payment'
 
     # use rspec for tests
     config.generators do |g|
       g.test_framework :rspec
     end
 
-    initializer 'spree.register.payment_methods', after: :after_initialize do |_app|
-      _app.config.spree.payment_methods << Spree::PaymentMethod::BankTransfer
-    end
+    config.after_initialize do |app|
+      app.config.spree.payment_methods << Spree::PaymentMethod::BankTransfer
 
-    initializer 'spree_bank_transfer.environment', before: :load_config_initializers do |_app|
-      SpreeBankTransfer::Config = SpreeBankTransfer::Configuration.new
+      Spree::PermittedAttributes.payment_method_attributes << :instructions
     end
 
     def self.activate

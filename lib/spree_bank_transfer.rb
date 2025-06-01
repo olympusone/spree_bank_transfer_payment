@@ -1,6 +1,0 @@
-require 'spree_core'
-require 'spree_api'
-require 'spree_backend'
-require 'spree_extension'
-require 'spree_bank_transfer/engine'
-require 'spree_bank_transfer/version'
