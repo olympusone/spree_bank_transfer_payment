@@ -9,12 +9,6 @@ module SpreeBankTransferPayment
       g.test_framework :rspec
     end
 
-    config.after_initialize do |app|
-      app.config.spree.payment_methods << Spree::PaymentMethod::BankTransfer
-
-      Spree::PermittedAttributes.payment_method_attributes << :instructions
-    end
-
     def self.activate
       Dir.glob(File.join(File.dirname(__FILE__), '../../app/**/*_decorator*.rb')) do |c|
         Rails.configuration.cache_classes ? require(c) : load(c)
