@@ -1,3 +1,1 @@
-<% if payment_method.instructions.present? %>
-    <%= payment_method.instructions.html_safe %>
-<% end %>
+<%= payment_method.instructions&.html_safe %>

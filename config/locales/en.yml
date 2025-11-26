@@ -3,7 +3,7 @@ en:
   activerecord:
     attributes:
       spree/payment_method:
-        instructions: Instructions
+        instructions: Information for Bank Transfer
   spree:
     bank_transfer: Bank Transfer
     bank_transfer_method: Bank Transfer

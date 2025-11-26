@@ -3,7 +3,7 @@ el:
   activerecord:
     attributes:
       spree/payment_method:
-        instructions: Οδηγίες
+        instructions: Πληροφορίες για την Τραπεζική Κατάθεση
   spree:
     bank_transfer: Τραπεζική Κατάθεση
     bank_transfer_method: Τραπεζική Κατάθεση
