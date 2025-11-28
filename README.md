@@ -1,4 +1,4 @@
-# SpreeBankTransferPayment
+# Spree Bank Transfer Payment
 
 This is a Bank Transfer Payment extension for [Spree Commerce](https://spreecommerce.org), an open source e-commerce platform built with Ruby on Rails. Adds Bank Transfer payment method option during checkout.
 
@@ -6,61 +6,44 @@ This is a Bank Transfer Payment extension for [Spree Commerce](https://spreecomm
 
 ## Installation
 
-1. Add this extension to your Gemfile:
+1. Add this extension to your Gemfile with this line:
 
     ```bash
     bundle add spree_bank_transfer_payment
     ```
 
-2. Install the migrations:
+2. Run the install generator
 
     ```bash
-    bundle exec rake railties:install:migrations FROM=spree_bank_transfer_payment
+    bundle exec rails g spree_bank_transfer_payment:install
     ```
 
-3. Run the migrations:
+3. Restart your server
 
-    ```bash
-    bundle exec rails db:migrate
-    ```
-
-4. Restart your server
+  If your server was running, restart it so that it can find the assets properly.
 
 ## Developing
 
-1. Create a dummy app:
+1. Create a dummy app
 
     ```bash
     bundle update
     bundle exec rake test_app
     ```
 
-2. Add code.
+2. Add your new code
 
-3. Run tests:
+3. Run tests
 
     ```bash
     bundle exec rspec
     ```
 
-When testing your application's integration you may use its factories:
+When testing your applications integration with this extension you may use it's factories.
+Simply add this require statement to your spec_helper:
 
 ```ruby
 require 'spree_bank_transfer_payment/factories'
-```
-
-## Testing
-
-Generate the test app:
-
-```bash
-bundle exec rake test_app
-```
-
-Then run:
-
-```bash
-bundle exec rspec
 ```
 
 ## Releasing a new version

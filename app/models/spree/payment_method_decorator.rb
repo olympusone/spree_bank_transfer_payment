@@ -4,6 +4,6 @@ module Spree
       method_type == 'bank_transfer'
     end
   end
-end
 
-Spree::PaymentMethod.prepend Spree::PaymentMethodDecorator
+  PaymentMethod.prepend PaymentMethodDecorator
+end
